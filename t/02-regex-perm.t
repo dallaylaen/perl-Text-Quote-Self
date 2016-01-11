@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Test::More;
 
-use Text::Escape::Self qw(safe_text);
+use Text::Quote::Self qw(safe_text);
 
 my $safe = safe_text( "fast food" );
 

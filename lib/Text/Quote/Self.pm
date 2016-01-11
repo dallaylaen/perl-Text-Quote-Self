@@ -1,4 +1,4 @@
-package Text::Escape::Self;
+package Text::Quote::Self;
 
 use 5.006;
 use strict;
@@ -6,7 +6,7 @@ use warnings;
 
 =head1 NAME
 
-Text::Escape::Self - Pack unsafe strings into self-quoting objects.
+Text::Quote::Self - Pack unsafe strings into self-quoting objects.
 
 =head1 VERSION
 
@@ -20,13 +20,13 @@ our $VERSION = 0.01;
 
 In one part of your app:
 
-    use Text::Escape::Self qw(safe_text);
+    use Text::Quote::Self qw(safe_text);
 
 	my $safe = safe_text($user_input);
 
 Elsewhere:
 
-    use Text::Escape::Self qw($Style);
+    use Text::Quote::Self qw($Style);
 
 	local $Style = "as_html";
     print $safe; # now with &gt;
@@ -38,7 +38,7 @@ Elsewhere:
 =head2 safe_text( $initial_string )
 
 Shorter constructor alias.
-Returns a Text::Escape::Self instance containing original text.
+Returns a Text::Quote::Self instance containing original text.
 
 =cut
 
@@ -72,10 +72,10 @@ sub new {
 
 =head2 as_string
 
-Stringify contained value according to $Text::Escape::Self::Style value.
+Stringify contained value according to $Text::Quote::Self::Style value.
 If not given, default to C<as_is>.
 
-This method is called whenever Text::Escape::Self object is used in string
+This method is called whenever Text::Quote::Self object is used in string
 context.
 
 Possible values include C<as_is>, C<as_uri>, and C<as_html>.
@@ -167,7 +167,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Text::Escape::Self
+    perldoc Text::Quote::Self
 
 
 You can also look for information at:
@@ -209,4 +209,4 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-1; # End of Text::Escape::Self
+1; # End of Text::Quote::Self

@@ -2,7 +2,7 @@
 .githooks/pre-commit
 .githooks/setup.sh
 Changes
-lib/Text/Escape/Self.pm
+lib/Text/Quote/Self.pm
 Makefile.PL
 MANIFEST			This list of files
 README

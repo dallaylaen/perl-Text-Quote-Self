@@ -4,10 +4,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME                => 'Text::Escape::Self',
+    NAME                => 'Text::Quote::Self',
     AUTHOR              => q{Konstantin S. Uvarin <khedin@gmail.com>},
-    VERSION_FROM        => 'lib/Text/Escape/Self.pm',
-    ABSTRACT_FROM       => 'lib/Text/Escape/Self.pm',
+    VERSION_FROM        => 'lib/Text/Quote/Self.pm',
+    ABSTRACT_FROM       => 'lib/Text/Quote/Self.pm',
     ($ExtUtils::MakeMaker::VERSION >= 6.3002
       ? ('LICENSE'=> 'perl')
       : ()),
