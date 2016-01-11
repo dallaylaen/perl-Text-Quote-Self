@@ -4,10 +4,10 @@ use strict;
 use warnings;
 use Test::More;
 
-use Text::Quote::Self qw(safe_text);
+use Text::Quote::Self qw(quote_text);
 
 my $unsafe = "<foo> &= <bar> .*";
-my $safe   = safe_text( $unsafe );
+my $safe   = quote_text( $unsafe );
 
 is ("$safe", $unsafe, "Stringify round-trip");
 

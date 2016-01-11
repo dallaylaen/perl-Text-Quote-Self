@@ -14,28 +14,28 @@ Version 0.01
 
 =cut
 
-our $VERSION = 0.01;
+our $VERSION = 0.0101;
 
 =head1 SYNOPSIS
 
 In one part of your app:
 
-    use Text::Quote::Self qw(safe_text);
+    use Text::Quote::Self qw(quote_text);
 
-	my $safe = safe_text($user_input);
+	my $safe = quote_text($user_input);
 
 Elsewhere:
 
-    use Text::Quote::Self qw($Style);
+    use Text::Quote::Self;
 
-	local $Style = "as_html";
+	local $Text::Quote::Self::Style = "as_html";
     print $safe; # now with &gt;
     print $safe->as_uri; # uri-escaped
     save_to_database( $safe->as_is ); # unmodified
 
 =head1 EXPORT
 
-=head2 safe_text( $initial_string )
+=head2 quote_text( $initial_string )
 
 Shorter constructor alias.
 Returns a Text::Quote::Self instance containing original text.
@@ -47,9 +47,9 @@ use URI::Escape qw(uri_escape);
 
 use overload '""' => "as_string";
 use parent qw(Exporter);
-our @EXPORT_OK = qw( safe_text );
+our @EXPORT_OK = qw( quote_text );
 
-sub safe_text {
+sub quote_text {
 	return __PACKAGE__->new(@_);
 };
 

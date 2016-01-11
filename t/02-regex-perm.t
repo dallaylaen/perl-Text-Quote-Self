@@ -4,9 +4,9 @@ use strict;
 use warnings;
 use Test::More;
 
-use Text::Quote::Self qw(safe_text);
+use Text::Quote::Self qw(quote_text);
 
-my $safe = safe_text( "fast food" );
+my $safe = quote_text( "fast food" );
 
 $safe =~ s/foo/bar/;
 
