@@ -14,7 +14,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = 0.0102;
+our $VERSION = 0.0103;
 
 =head1 SYNOPSIS
 
@@ -158,8 +158,10 @@ Konstantin S. Uvarin, C<< <khedin at gmail.com> >>
 
 =head1 BUGS
 
+Probably lots of them - this software is still in alpha stage.
+
 Please report any bugs or feature requests to C<bug-text-escape-self at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Text-Escape-Self>.  I will be notified, and then you'll
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Text-Quote-Self>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 =head1 SUPPORT
@@ -175,25 +177,21 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Text-Escape-Self>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Text-Quote-Self>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Text-Escape-Self>
+L<http://annocpan.org/dist/Text-Quote-Self>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Text-Escape-Self>
+L<http://cpanratings.perl.org/d/Text-Quote-Self>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Text-Escape-Self/>
+L<http://search.cpan.org/dist/Text-Quote-Self/>
 
 =back
-
-
-=head1 ACKNOWLEDGEMENTS
-
 
 =head1 LICENSE AND COPYRIGHT
 

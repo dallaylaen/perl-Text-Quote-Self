@@ -1,5 +1,5 @@
 Revision history for Text-Escape-Self
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+0.01    Tue Jan 12 2016
+        First version released. Quoting: as_is, as_html, as_uri, and TO_JSON.
 
