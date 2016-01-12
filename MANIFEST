@@ -9,9 +9,6 @@ README
 t/00-load.t
 t/01-self-quote.t
 t/02-regex-perm.t
-t/manifest.t
-t/pod-coverage.t
-t/pod.t
 xt/boilerplate.t
 xt/manifest.t
 xt/pod-coverage.t
