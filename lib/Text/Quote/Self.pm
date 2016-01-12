@@ -14,7 +14,7 @@ Version 0.01
 
 =cut
 
-our $VERSION = 0.0101;
+our $VERSION = 0.0102;
 
 =head1 SYNOPSIS
 
@@ -119,14 +119,6 @@ sub as_string {
 	return $self->$method;
 };
 
-=head2 as_is()
-
-Return original string.
-
-B<NOTE> If this style is
-
-=cut
-
 sub as_is {
 	# HACK! Let $x =~ s/foo/bar do what it means
 	return ${ $_[0] };
@@ -148,7 +140,17 @@ sub as_uri {
 	return uri_escape( $text );
 };
 
-=head1
+=head2 TO_JSON
+
+If serialized to JSON, a Text::Quote::Self instance will always return
+the original string.
+
+=cut
+
+sub TO_JSON {
+	my $self = shift;
+	return $$self;
+};
 
 =head1 AUTHOR
 
@@ -159,9 +161,6 @@ Konstantin S. Uvarin, C<< <khedin at gmail.com> >>
 Please report any bugs or feature requests to C<bug-text-escape-self at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Text-Escape-Self>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
-
-
-
 
 =head1 SUPPORT
 

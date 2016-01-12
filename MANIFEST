@@ -16,3 +16,4 @@ xt/boilerplate.t
 xt/manifest.t
 xt/pod-coverage.t
 xt/pod.t
+t/03-json.t
